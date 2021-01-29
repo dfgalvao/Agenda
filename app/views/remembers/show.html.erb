@@ -1,0 +1,21 @@
+<div class="container text-center"> 
+  <p id="notice"><%= notice %></p>
+
+  <p>
+    <strong>Name:</strong>
+    <%= @remember.name %>
+  </p>
+
+  <p>
+    <strong>Email:</strong>
+    <%= @remember.email %>
+  </p>
+
+  <p>
+    <strong>Phone:</strong>
+    <%= @remember.phone %>
+  </p>
+
+  <%= link_to 'Edit', edit_remember_path(@remember) %> |
+  <%= link_to 'Back', remembers_path %>
+</div>
